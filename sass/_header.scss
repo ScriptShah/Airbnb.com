@@ -1,0 +1,36 @@
+.small__header {
+  width: 93%;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 9px -3px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sm-header__container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #fff;
+}
+
+.search__bar {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}

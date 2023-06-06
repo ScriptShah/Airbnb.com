@@ -1,0 +1,18 @@
+@font-face {
+  font-family: circular-light;
+  src: url(../fonts/CircularStd-Light.otf);
+}
+
+@font-face {
+  font-family: circular-mid;
+  src: url(../fonts/CircularStd-Medium.otf);
+}
+
+@font-face {
+  font-family: circular-bold;
+  src: url(../fonts/CircularStd-Bold.otf);
+}
+
+body {
+  font-family: circular-light;
+}
