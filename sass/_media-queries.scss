@@ -5,3 +5,9 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 744px) {
+  .big__header {
+    display: none;
+  }
+}

@@ -67,3 +67,36 @@ button {
 }
 
 //  big screen header start here !
+
+:is(.big__header, .big-header__mid, .big-header__right) {
+  display: flex;
+  align-items: center;
+}
+
+.big__header {
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid #8b8b8b36;
+}
+
+.big-header__mid {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 2rem;
+  gap: 10px;
+  font-size: 15px;
+  font-family: circular-mid;
+}
+
+.big-header__mid button {
+  color: #000000c9;
+}
+
+.btn__splitter {
+  display: block;
+  width: 1px;
+  height: 25px;
+  background-color: #6060602c;
+}

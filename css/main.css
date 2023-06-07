@@ -107,6 +107,10 @@ body {
   color: #888;
 }
 
+.btn__txt.guests {
+  font-family: circular-light;
+}
+
 .small__header {
   width: 93%;
   height: 58px;
@@ -169,8 +173,46 @@ button:hover {
   border-radius: 20px;
 }
 
+:is(.big__header, .big-header__mid, .big-header__right) {
+  display: flex;
+  align-items: center;
+}
+
+.big__header {
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgba(139, 139, 139, 0.2117647059);
+}
+
+.big-header__mid {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 2rem;
+  gap: 10px;
+  font-size: 15px;
+  font-family: circular-mid;
+}
+
+.big-header__mid button {
+  color: rgba(0, 0, 0, 0.7882352941);
+}
+
+.btn__splitter {
+  display: block;
+  width: 1px;
+  height: 25px;
+  background-color: rgba(96, 96, 96, 0.1725490196);
+}
+
 @media only screen and (min-width: 744px) {
   .small__header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .big__header {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
