@@ -97,7 +97,8 @@ body {
   line-height: 19px;
 }
 
-.search-bar__header-container {
+.search-bar__header-container,
+.right__link {
   font-family: circular-mid;
   font-size: 15px;
 }
@@ -180,19 +181,44 @@ button:hover {
 
 .big__header {
   width: 100%;
-  height: 80px;
+  height: 78px;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 90px;
   border-bottom: 1px solid rgba(139, 139, 139, 0.2117647059);
+  gap: 10px;
+}
+
+.big-header__left {
+  position: absolute;
+  left: 80px;
+}
+
+.spacer {
+  height: 80px;
+  width: 320px;
+  background-color: transparent;
+  flex-shrink: 5;
 }
 
 .big-header__mid {
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  height: 48px;
+  box-shadow: 0px 7px 5px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
   padding: 10px 10px;
   border-radius: 2rem;
   gap: 10px;
   font-size: 15px;
   font-family: circular-mid;
+  flex-shrink: 1;
+}
+.big-header__mid:hover {
+  box-shadow: 16px 13px 8px -49px rgba(0, 0, 0, 0.1), 0px 10px 8px -3px rgba(0, 0, 0, 0.1), 0px 8px 2px -6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.6s ease 0.3s;
+}
+.big-header__mid .btn__txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .big-header__mid button {
@@ -206,6 +232,67 @@ button:hover {
   background-color: rgba(96, 96, 96, 0.1725490196);
 }
 
+.search-icon__container {
+  margin-right: -10px;
+  background-color: #ff385c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.big-header__right {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 300px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding-left: 40px;
+  gap: 5px;
+}
+
+.right__link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.right__link:hover {
+  background-color: rgba(136, 136, 136, 0.1019607843);
+}
+
+.earth {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 45px;
+  height: 43px;
+}
+.earth:hover {
+  background-color: rgba(136, 136, 136, 0.1019607843);
+}
+
+.user-select__btn {
+  display: flex;
+  width: 80px;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: 1px solid rgba(73, 73, 73, 0.4);
+  padding: 5px;
+}
+.user-select__btn:hover {
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.burger__container {
+  margin-left: 5px;
+}
+
 @media only screen and (min-width: 744px) {
   .small__header {
     display: none;
@@ -214,5 +301,31 @@ button:hover {
 @media only screen and (max-width: 744px) {
   .big__header {
     display: none;
+  }
+}
+@media only screen and (max-width: 1128px) {
+  .big-header__left {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .big__header {
+    padding: 10px 50px;
+  }
+  .big-header__left {
+    left: 40px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .spacer {
+    display: none;
+  }
+  .big__header {
+    padding: 10px 50px 10px 90px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .big__header {
+    gap: 0;
   }
 }/*# sourceMappingURL=main.css.map */

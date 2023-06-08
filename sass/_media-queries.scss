@@ -11,3 +11,34 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 1128px) {
+  .big-header__left {
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .big__header {
+    padding: 10px 50px;
+  }
+  .big-header__left {
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .spacer {
+    display: none;
+  }
+
+  .big__header {
+    padding: 10px 50px 10px 90px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .big__header {
+    gap: 0;
+  }
+}
