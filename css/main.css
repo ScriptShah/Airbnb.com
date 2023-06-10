@@ -298,15 +298,16 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   top: 100px;
-  padding: 0px 20px;
-  width: 100vw;
+  padding: 0px 25px;
+  width: 100%;
 }
 
 .categories__container {
   display: flex;
   flex-flow: row nowrap;
-  gap: 3rem;
-  height: 70px;
+  align-items: center;
+  gap: 2.55rem;
+  height: 50px;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 50px;
@@ -317,22 +318,35 @@ button:hover {
   flex-flow: column nowrap;
   align-items: center;
   gap: 7px;
+  height: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .category .category__txt {
   font-size: 12px;
 }
+.category img {
+  filter: opacity(60%);
+}
 
 .category__arrow-btn {
-  border: 1px solid #000;
+  border: 1px solid rgba(79, 79, 79, 0.337254902);
   border-radius: 90px;
+  width: 28px;
+  height: 28px;
 }
 
 .category__filter {
-  border: 1px solid #000;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(92, 92, 92, 0.2392156863);
   height: 40px;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 700;
+  padding: 22px 15px;
 }
 
 @media only screen and (min-width: 744px) {

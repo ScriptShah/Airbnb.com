@@ -4,14 +4,15 @@
   @include flex_row;
 
   top: 100px;
-  padding: 0px 20px;
-  width: 100vw;
+  padding: 0px 25px;
+  width: 100%;
 }
 
 .categories__container {
   @include flex_row;
-  gap: 3rem;
-  height: 70px;
+  align-items: center;
+  gap: 2.55rem;
+  height: 50px;
   width: max-content;
   padding: 10px 50px;
 }
@@ -20,21 +21,32 @@
   @include flex_col;
   align-items: center;
   gap: 7px;
-
+  height: 50px;
+  width: fit-content;
   .category__txt {
     font-size: 12px;
+  }
+
+  img {
+    filter: opacity(60%);
   }
 }
 
 .category__arrow-btn {
-  border: 1px solid #000;
+  border: 1px solid #4f4f4f56;
   border-radius: 90px;
+  width: 28px;
+  height: 28px;
 }
 
 .category__filter {
-  border: 1px solid #000;
+  @include flex_row;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #5c5c5c3d;
   height: 40px;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 700;
+  padding: 22px 15px;
 }
