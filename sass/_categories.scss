@@ -23,8 +23,22 @@
   gap: 7px;
   height: 50px;
   width: fit-content;
+
+  &:hover {
+    .category__txt {
+      color: #000;
+    }
+    img {
+      filter: opacity(100%);
+    }
+
+    cursor: pointer;
+  }
+
   .category__txt {
     font-size: 12px;
+    font-weight: 700;
+    color: #888;
   }
 
   img {

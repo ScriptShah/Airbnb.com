@@ -322,8 +322,19 @@ button:hover {
   width: -moz-fit-content;
   width: fit-content;
 }
+.category:hover {
+  cursor: pointer;
+}
+.category:hover .category__txt {
+  color: #000;
+}
+.category:hover img {
+  filter: opacity(100%);
+}
 .category .category__txt {
   font-size: 12px;
+  font-weight: 700;
+  color: #888;
 }
 .category img {
   filter: opacity(60%);
