@@ -1,14 +1,14 @@
 //  small screen header start here !
 
 .small__header {
-  width: 93%;
-  height: 58px;
+  width: 88%;
+  height: 56px;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px -1px 9px -3px rgba(0, 0, 0, 0.1),
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   margin: 15px;
-  margin-left: 20px;
+  margin-left: 25px;
   padding: 10px 15px;
   position: fixed;
   display: flex;
@@ -65,6 +65,8 @@ button {
   border: 1px solid #8888885c;
   border-radius: 20px;
 }
+
+//small header ends here !
 
 //  big screen header start here !
 
@@ -190,3 +192,5 @@ button {
 .burger__container {
   margin-left: 5px;
 }
+
+// big header ends here !

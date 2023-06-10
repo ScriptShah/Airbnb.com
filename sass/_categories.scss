@@ -1,0 +1,40 @@
+//place categories starts here
+.categories {
+  position: fixed;
+  @include flex_row;
+
+  top: 100px;
+  padding: 0px 20px;
+  width: 100vw;
+}
+
+.categories__container {
+  @include flex_row;
+  gap: 3rem;
+  height: 70px;
+  width: max-content;
+  padding: 10px 50px;
+}
+
+.category {
+  @include flex_col;
+  align-items: center;
+  gap: 7px;
+
+  .category__txt {
+    font-size: 12px;
+  }
+}
+
+.category__arrow-btn {
+  border: 1px solid #000;
+  border-radius: 90px;
+}
+
+.category__filter {
+  border: 1px solid #000;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}

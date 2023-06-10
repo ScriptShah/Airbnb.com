@@ -113,13 +113,13 @@ body {
 }
 
 .small__header {
-  width: 93%;
-  height: 58px;
+  width: 88%;
+  height: 56px;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px -1px 9px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   margin: 15px;
-  margin-left: 20px;
+  margin-left: 25px;
   padding: 10px 15px;
   position: fixed;
   display: flex;
@@ -291,6 +291,48 @@ button:hover {
 
 .burger__container {
   margin-left: 5px;
+}
+
+.categories {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  top: 100px;
+  padding: 0px 20px;
+  width: 100vw;
+}
+
+.categories__container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  height: 70px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 50px;
+}
+
+.category {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 7px;
+}
+.category .category__txt {
+  font-size: 12px;
+}
+
+.category__arrow-btn {
+  border: 1px solid #000;
+  border-radius: 90px;
+}
+
+.category__filter {
+  border: 1px solid #000;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 744px) {

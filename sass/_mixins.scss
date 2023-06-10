@@ -1,0 +1,9 @@
+@mixin flex_row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@mixin flex_col {
+  display: flex;
+  flex-flow: column nowrap;
+}
