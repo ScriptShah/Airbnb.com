@@ -306,11 +306,18 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 2.55rem;
+  gap: 2.6rem;
   height: 50px;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 50px;
+}
+.categories__container .category__buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 150px;
 }
 
 .category {

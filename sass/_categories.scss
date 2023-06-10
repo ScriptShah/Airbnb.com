@@ -11,10 +11,17 @@
 .categories__container {
   @include flex_row;
   align-items: center;
-  gap: 2.55rem;
+  gap: 2.6rem;
   height: 50px;
   width: max-content;
   padding: 10px 50px;
+
+  .category__buttons {
+    @include flex_row;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+  }
 }
 
 .category {
