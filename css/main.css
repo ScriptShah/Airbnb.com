@@ -335,6 +335,7 @@ button:hover {
   font-size: 12px;
   font-weight: 700;
   color: #888;
+  white-space: nowrap;
 }
 .category img {
   filter: opacity(60%);
