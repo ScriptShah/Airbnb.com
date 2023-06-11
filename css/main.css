@@ -77,6 +77,13 @@ h6 {
   isolation: isolate;
 }
 
+/*
+  for no word warping
+*/
+* {
+  white-space: nowrap;
+}
+
 @font-face {
   font-family: circular-light;
   src: url(../fonts/CircularStd-Light.otf);
@@ -181,21 +188,22 @@ button:hover {
 
 .big__header {
   width: 100%;
-  height: 78px;
+  height: 81px;
   justify-content: space-between;
-  padding: 10px 90px;
+  padding: 10px 95px;
   border-bottom: 1px solid rgba(139, 139, 139, 0.2117647059);
   gap: 10px;
 }
 
 .big-header__left {
   position: absolute;
+  top: 23.8px;
   left: 80px;
 }
 
 .spacer {
   height: 80px;
-  width: 320px;
+  width: 300px;
   background-color: transparent;
   flex-shrink: 5;
 }
@@ -206,7 +214,7 @@ button:hover {
   border: 1px solid rgba(0, 0, 0, 0.1333333333);
   padding: 10px 10px;
   border-radius: 2rem;
-  gap: 10px;
+  gap: 6px;
   font-size: 15px;
   font-family: circular-mid;
   flex-shrink: 1;
@@ -218,7 +226,6 @@ button:hover {
 .big-header__mid .btn__txt {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .big-header__mid button {
@@ -235,8 +242,8 @@ button:hover {
 .search-icon__container {
   margin-right: -10px;
   background-color: #ff385c;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -297,7 +304,9 @@ button:hover {
   position: fixed;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   top: 100px;
+  left: 5px;
   padding: 0px 25px;
   width: 100%;
 }
@@ -306,10 +315,8 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 2.6rem;
-  height: 50px;
-  width: -moz-max-content;
-  width: max-content;
+  gap: 3.3rem;
+  height: 60px;
   padding: 10px 50px;
 }
 .categories__container .category__buttons {
@@ -342,10 +349,22 @@ button:hover {
   font-size: 12px;
   font-weight: 700;
   color: #888;
-  white-space: nowrap;
+  offset: 5px;
 }
 .category img {
   filter: opacity(60%);
+}
+
+.category__buttons {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsla(0, 0%, 100%, 0.897);
+  gap: 5px;
+  right: 2rem;
 }
 
 .category__arrow-btn {

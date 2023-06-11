@@ -77,21 +77,22 @@ button {
 
 .big__header {
   width: 100%;
-  height: 78px;
+  height: 81px;
   justify-content: space-between;
-  padding: 10px 90px;
+  padding: 10px 95px;
   border-bottom: 1px solid #8b8b8b36;
   gap: 10px;
 }
 
 .big-header__left {
   position: absolute;
+  top: 23.8px;
   left: 80px;
 }
 
 .spacer {
   height: 80px;
-  width: 320px;
+  width: 300px;
   background-color: transparent;
   flex-shrink: 5;
 }
@@ -102,7 +103,7 @@ button {
   border: 1px solid #00000022;
   padding: 10px 10px;
   border-radius: 2rem;
-  gap: 10px;
+  gap: 6px;
   font-size: 15px;
   font-family: circular-mid;
   flex-shrink: 1;
@@ -116,7 +117,6 @@ button {
   .btn__txt {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
 
@@ -134,8 +134,8 @@ button {
 .search-icon__container {
   margin-right: -10px;
   background-color: #ff385c;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border-radius: 50px;
   display: flex;
   align-items: center;

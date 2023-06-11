@@ -76,3 +76,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+  for no word warping
+*/
+
+* {
+  white-space: nowrap;
+}

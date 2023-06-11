@@ -2,8 +2,10 @@
 .categories {
   position: fixed;
   @include flex_row;
+  align-items: center;
 
   top: 100px;
+  left: 5px;
   padding: 0px 25px;
   width: 100%;
 }
@@ -11,9 +13,8 @@
 .categories__container {
   @include flex_row;
   align-items: center;
-  gap: 2.6rem;
-  height: 50px;
-  width: max-content;
+  gap: 3.3rem;
+  height: 60px;
   padding: 10px 50px;
 
   .category__buttons {
@@ -46,12 +47,22 @@
     font-size: 12px;
     font-weight: 700;
     color: #888;
-    white-space: nowrap;
+    offset: 5px;
   }
 
   img {
     filter: opacity(60%);
   }
+}
+
+.category__buttons {
+  position: fixed;
+  @include flex_row;
+  align-items: center;
+  height: fit-content;
+  background-color: hsla(0, 0%, 100%, 0.897);
+  gap: 5px;
+  right: 2rem;
 }
 
 .category__arrow-btn {
