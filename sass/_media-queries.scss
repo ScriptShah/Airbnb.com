@@ -4,10 +4,21 @@
   .small__header {
     display: none;
   }
+  .big__header {
+    padding: 10px 50px;
+  }
+
+  .categories {
+    top: 100px;
+    left: 5px;
+  }
 }
 
 @media only screen and (max-width: 744px) {
   .big__header {
+    display: none;
+  }
+  .category__buttons {
     display: none;
   }
 }
@@ -15,6 +26,10 @@
 @media only screen and (max-width: 1128px) {
   .big-header__left {
     width: 30px;
+  }
+
+  .category__buttons {
+    width: 190px;
   }
 }
 
@@ -24,6 +39,13 @@
   }
   .big-header__left {
     left: 40px;
+  }
+
+  .categories__container {
+    padding: 10px 10px;
+  }
+  .category__buttons {
+    width: 185px;
   }
 }
 

@@ -120,7 +120,7 @@ body {
 }
 
 .small__header {
-  width: 88%;
+  width: 92%;
   height: 56px;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -305,8 +305,8 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  top: 100px;
-  left: 5px;
+  top: 85px;
+  left: -8px;
   padding: 0px 25px;
   width: 100%;
 }
@@ -359,12 +359,14 @@ button:hover {
   position: fixed;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: center;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: hsla(0, 0%, 100%, 0.897);
-  gap: 5px;
-  right: 2rem;
+  height: 80px;
+  width: 240px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(270deg, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0.4038865546) 100%);
+  gap: 20px;
+  right: 0px;
 }
 
 .category__arrow-btn {
@@ -391,15 +393,28 @@ button:hover {
   .small__header {
     display: none;
   }
+  .big__header {
+    padding: 10px 50px;
+  }
+  .categories {
+    top: 100px;
+    left: 5px;
+  }
 }
 @media only screen and (max-width: 744px) {
   .big__header {
+    display: none;
+  }
+  .category__buttons {
     display: none;
   }
 }
 @media only screen and (max-width: 1128px) {
   .big-header__left {
     width: 30px;
+  }
+  .category__buttons {
+    width: 190px;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -408,6 +423,12 @@ button:hover {
   }
   .big-header__left {
     left: 40px;
+  }
+  .categories__container {
+    padding: 10px 10px;
+  }
+  .category__buttons {
+    width: 185px;
   }
 }
 @media only screen and (max-width: 950px) {
