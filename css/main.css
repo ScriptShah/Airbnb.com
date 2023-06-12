@@ -393,12 +393,12 @@ button:hover {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 65px;
   background-color: #fff;
   border-top: 1px solid rgba(139, 139, 139, 0.2117647059);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  padding: 20px;
 }
 
 .small-footer__container {
@@ -428,7 +428,7 @@ button:hover {
 .big-footer__container {
   display: none;
   width: 100%;
-  padding: 0px 80px;
+  padding: 0px 70px;
   justify-content: space-between;
   gap: 10px;
   font-size: 15px;
@@ -438,24 +438,24 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   flex-wrap: wrap;
-  align-items: center;
   gap: 5px;
-  height: 65px;
-  background-color: #b0b0b0;
-  text-align: center;
+  align-content: center;
 }
-.big-footer__container-left .bg-footer-item__left {
-  background-color: aqua;
+
+.dot {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 5px;
+  height: 0px;
+  align-self: first baseline;
+}
+
+.bg-footer-item__left {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-}
-.big-footer__container-left .dot {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 5px;
-  height: 35px;
+  flex-shrink: 0;
 }
 
 .big-footer__container-right {
@@ -463,6 +463,7 @@ button:hover {
   flex-flow: row nowrap;
   align-items: center;
   gap: 15px;
+  flex-shrink: 0;
 }
 .big-footer__container-right span {
   font-weight: 700;
