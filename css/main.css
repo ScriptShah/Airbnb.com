@@ -427,8 +427,11 @@ button:hover {
 
 .big-footer__container {
   display: none;
+  width: 100%;
+  padding: 0px 80px;
   justify-content: space-between;
-  gap: 50px;
+  gap: 10px;
+  font-size: 15px;
 }
 
 .big-footer__container-left {
@@ -437,6 +440,7 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
+  height: 65px;
 }
 .big-footer__container-left .bg-footer-item__left {
   display: flex;
@@ -458,13 +462,11 @@ button:hover {
   gap: 15px;
 }
 .big-footer__container-right span {
-  font-size: 14px;
   font-weight: 700;
 }
 .big-footer__container-right span:hover {
   cursor: pointer;
   text-decoration: underline;
-  offset: 10px;
 }
 
 @media only screen and (min-width: 744px) {
@@ -515,6 +517,9 @@ button:hover {
   }
   .category__buttons {
     width: 185px;
+  }
+  .big-footer__container {
+    padding: 0px 60px;
   }
 }
 @media only screen and (max-width: 950px) {

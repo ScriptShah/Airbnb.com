@@ -35,8 +35,11 @@
 
 .big-footer__container {
   display: none;
+  width: 100%;
+  padding: 0px 80px;
   justify-content: space-between;
-  gap: 50px;
+  gap: 10px;
+  font-size: 15px;
 }
 
 .big-footer__container-left {
@@ -44,10 +47,10 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
+  height: 65px;
 
   .bg-footer-item__left {
     @include flex_row;
-
     align-items: center;
     justify-content: flex-start;
   }
@@ -65,12 +68,10 @@
   gap: 15px;
 
   span {
-    font-size: 14px;
     font-weight: 700;
     &:hover {
       cursor: pointer;
       text-decoration: underline;
-      offset: 10px;
     }
   }
 }
