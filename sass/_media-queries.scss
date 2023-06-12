@@ -1,16 +1,25 @@
 // small header
 
 @media only screen and (min-width: 744px) {
-  .small__header {
+  .small__header,
+  .small-footer__container {
     display: none;
   }
   .big__header {
     padding: 10px 50px;
   }
 
+  .big-footer__container {
+    @include flex_row;
+  }
+
   .categories {
     top: 100px;
     left: 5px;
+
+    .categories__container {
+      gap: 3.3rem;
+    }
   }
 }
 

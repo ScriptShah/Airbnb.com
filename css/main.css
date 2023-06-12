@@ -315,7 +315,7 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 3.3rem;
+  gap: 2.3rem;
   height: 60px;
   padding: 10px 50px;
 }
@@ -389,16 +389,102 @@ button:hover {
   padding: 22px 15px;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  border-top: 1px solid rgba(139, 139, 139, 0.2117647059);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.small-footer__container {
+  width: 260px;
+  height: 65px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b0b0;
+}
+.small-footer__container span {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.7529411765);
+}
+
+.small-footer__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 5px;
+}
+.small-footer__item:hover {
+  cursor: pointer;
+}
+
+.big-footer__container {
+  display: none;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.big-footer__container-left {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.big-footer__container-left .bg-footer-item__left {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.big-footer__container-left .dot {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 5px;
+  height: 35px;
+}
+
+.big-footer__container-right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 15px;
+}
+.big-footer__container-right span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.big-footer__container-right span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  offset: 10px;
+}
+
 @media only screen and (min-width: 744px) {
-  .small__header {
+  .small__header,
+  .small-footer__container {
     display: none;
   }
   .big__header {
     padding: 10px 50px;
   }
+  .big-footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
   .categories {
     top: 100px;
     left: 5px;
+  }
+  .categories .categories__container {
+    gap: 3.3rem;
   }
 }
 @media only screen and (max-width: 744px) {
