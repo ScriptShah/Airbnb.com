@@ -441,8 +441,11 @@ button:hover {
   align-items: center;
   gap: 5px;
   height: 65px;
+  background-color: #b0b0b0;
+  text-align: center;
 }
 .big-footer__container-left .bg-footer-item__left {
+  background-color: aqua;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

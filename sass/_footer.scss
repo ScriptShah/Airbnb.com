@@ -48,8 +48,11 @@
   align-items: center;
   gap: 5px;
   height: 65px;
+  background-color: #b0b0b0;
+  text-align: center;
 
   .bg-footer-item__left {
+    background-color: aqua;
     @include flex_row;
     align-items: center;
     justify-content: flex-start;
