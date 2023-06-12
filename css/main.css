@@ -338,6 +338,7 @@ button:hover {
 }
 .category:hover {
   cursor: pointer;
+  border-bottom: 1px solid #000;
 }
 .category:hover .category__txt {
   color: #000;
