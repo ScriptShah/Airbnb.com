@@ -371,6 +371,7 @@ button:hover {
   background: linear-gradient(270deg, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0.4038865546) 100%);
   gap: 20px;
   right: 0px;
+  top: 99px;
 }
 
 .category__arrow-btn {
@@ -391,6 +392,61 @@ button:hover {
   font-size: 12px;
   font-weight: 700;
   padding: 22px 15px;
+}
+
+.total__price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  height: 250px;
+  padding: 10px 20px;
+  line-height: 22px;
+}
+
+.tp__container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  padding: 10px 15px;
+  margin: 0px 7px;
+  border-radius: 10px;
+  border: 1px solid rgba(136, 136, 136, 0.4196078431);
+}
+
+.tp__left {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.tp__left .tp-left__txt {
+  font-weight: 600;
+}
+.tp__left .tp-left__txt.second {
+  font-weight: 100;
+  color: #4c4c4c;
+}
+
+.tp__right {
+  width: 48px;
+  height: 33px;
+  padding-left: 1px;
+  border-radius: 20px;
+  background-color: #b6b6b6;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.tp__right .tp__right-btn .tp_right-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b6b6b6;
+}
+.tp__right:hover {
+  background-color: #717171;
 }
 
 .footer {
@@ -443,6 +499,8 @@ button:hover {
   flex-wrap: wrap;
   gap: 5px;
   align-content: center;
+  min-width: 300px;
+  line-height: 16px;
 }
 
 .dot {
