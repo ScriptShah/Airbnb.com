@@ -13,10 +13,14 @@
     @include flex_row;
   }
 
+  .footer {
+    padding: 12px;
+  }
+
   .categories {
     top: 100px;
     left: 5px;
-
+    padding: 20px 25px;
     .categories__container {
       gap: 3.3rem;
     }

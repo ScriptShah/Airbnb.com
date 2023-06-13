@@ -4,7 +4,7 @@
   @include flex_row;
   align-items: center;
 
-  top: 85px;
+  top: 88px;
   left: -8px;
   padding: 0px 25px;
   width: 100%;
@@ -29,20 +29,21 @@
   @include flex_col;
   align-items: center;
   gap: 7px;
-  height: 50px;
+  height: 60px;
   width: fit-content;
-
+  line-height: 16px;
   &:hover {
     .category__txt {
       color: #000;
+      transition: color 0.3s ease;
     }
     img {
       filter: opacity(100%);
+      transition: filter 0.3s ease;
     }
 
     cursor: pointer;
-
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #8888887b;
   }
 
   .category__txt {

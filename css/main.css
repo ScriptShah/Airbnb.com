@@ -305,7 +305,7 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  top: 85px;
+  top: 88px;
   left: -8px;
   padding: 0px 25px;
   width: 100%;
@@ -332,19 +332,22 @@ button:hover {
   flex-flow: column nowrap;
   align-items: center;
   gap: 7px;
-  height: 50px;
+  height: 60px;
   width: -moz-fit-content;
   width: fit-content;
+  line-height: 16px;
 }
 .category:hover {
   cursor: pointer;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid rgba(136, 136, 136, 0.4823529412);
 }
 .category:hover .category__txt {
   color: #000;
+  transition: color 0.3s ease;
 }
 .category:hover img {
   filter: opacity(100%);
+  transition: filter 0.3s ease;
 }
 .category .category__txt {
   font-size: 12px;
@@ -399,7 +402,6 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  padding: 20px;
 }
 
 .small-footer__container {
@@ -486,9 +488,13 @@ button:hover {
     display: flex;
     flex-flow: row nowrap;
   }
+  .footer {
+    padding: 12px;
+  }
   .categories {
     top: 100px;
     left: 5px;
+    padding: 20px 25px;
   }
   .categories .categories__container {
     gap: 3.3rem;
