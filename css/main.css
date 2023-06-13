@@ -409,7 +409,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 75px;
+  height: 68px;
   padding: 10px 15px;
   margin: 0px 7px;
   border-radius: 10px;
@@ -556,6 +556,22 @@ button:hover {
   }
   .categories .categories__container {
     gap: 3.3rem;
+  }
+  .total__price {
+    height: 200px;
+  }
+  .total__price .tp__container {
+    margin: 0px 30px;
+  }
+  .total__price .tp__left {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+  }
+  .total__price .tp-left__txt-line {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(136, 136, 136, 0.4235294118);
   }
 }
 @media only screen and (max-width: 744px) {

@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 75px;
+  height: 68px;
   padding: 10px 15px;
   margin: 0px 7px;
   border-radius: 10px;
@@ -22,8 +22,6 @@
   @include flex_col;
   .tp-left__txt {
     font-weight: 600;
-    .tp-left__txt-line {
-    }
   }
 
   .tp-left__txt.second {

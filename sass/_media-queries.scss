@@ -25,6 +25,25 @@
       gap: 3.3rem;
     }
   }
+
+  .total__price {
+    height: 200px;
+
+    .tp__container {
+      margin: 0px 30px;
+    }
+    .tp__left {
+      @include flex_row;
+      gap: 1rem;
+    }
+
+    .tp-left__txt-line {
+      width: 1px;
+      height: 20px;
+
+      background-color: #8888886c;
+    }
+  }
 }
 
 @media only screen and (max-width: 744px) {
