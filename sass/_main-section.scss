@@ -1,3 +1,5 @@
+// main section starts here !
+
 .total__price {
   @include flex_row;
   align-items: flex-end;
@@ -50,5 +52,8 @@
 
   &:hover {
     background-color: #717171;
+    cursor: pointer;
   }
 }
+
+// main section ends here !

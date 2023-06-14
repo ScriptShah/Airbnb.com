@@ -1,6 +1,6 @@
-//place categories starts here
+//categories starts here
 .categories {
-  position: fixed;
+  position: absolute;
   @include flex_row;
   align-items: center;
 
@@ -94,3 +94,5 @@
   font-weight: 700;
   padding: 22px 15px;
 }
+
+// categories ends here !

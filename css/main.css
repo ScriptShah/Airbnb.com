@@ -301,7 +301,7 @@ button:hover {
 }
 
 .categories {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -447,6 +447,7 @@ button:hover {
 }
 .tp__right:hover {
   background-color: #717171;
+  cursor: pointer;
 }
 
 .footer {
