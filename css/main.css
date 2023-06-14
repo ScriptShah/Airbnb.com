@@ -367,6 +367,7 @@ button:hover {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  flex-shrink: 0;
   height: 80px;
   width: 240px;
   background: rgb(255, 255, 255);
