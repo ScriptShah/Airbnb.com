@@ -373,10 +373,10 @@ button:hover {
   background: linear-gradient(270deg, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0.4038865546) 100%);
   gap: 20px;
   right: 0px;
-  top: 99px;
 }
 
 .category__arrow-btn {
+  position: relative;
   border: 1px solid rgba(79, 79, 79, 0.337254902);
   border-radius: 90px;
   width: 28px;
@@ -384,6 +384,7 @@ button:hover {
 }
 
 .category__filter {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

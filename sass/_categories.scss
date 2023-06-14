@@ -74,10 +74,10 @@
   );
   gap: 20px;
   right: 0px;
-  top: 99px;
 }
 
 .category__arrow-btn {
+  position: relative;
   border: 1px solid #4f4f4f56;
   border-radius: 90px;
   width: 28px;
@@ -85,6 +85,7 @@
 }
 
 .category__filter {
+  position: relative;
   @include flex_row;
   align-items: center;
   gap: 8px;
