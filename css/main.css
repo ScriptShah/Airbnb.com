@@ -362,7 +362,7 @@ button:hover {
 }
 
 .category__buttons {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;

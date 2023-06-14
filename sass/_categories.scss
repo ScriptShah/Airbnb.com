@@ -60,7 +60,7 @@
 }
 
 .category__buttons {
-  position: fixed;
+  position: absolute;
   @include flex_row;
   justify-content: flex-start;
   align-items: center;
