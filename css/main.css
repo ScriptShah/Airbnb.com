@@ -258,7 +258,7 @@ button:hover {
   max-width: 300px;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  padding-left: 40px;
+  padding-left: 15px;
   gap: 5px;
 }
 
@@ -361,6 +361,11 @@ button:hover {
   filter: opacity(60%);
 }
 
+.category.selected {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.7607843137);
+  offset: 5px;
+}
+
 .category__buttons {
   position: absolute;
   display: flex;
@@ -369,7 +374,7 @@ button:hover {
   align-items: center;
   flex-shrink: 0;
   height: 80px;
-  width: 240px;
+  width: 245px;
   background: rgb(255, 255, 255);
   background: linear-gradient(270deg, rgb(255, 255, 255) 90%, rgba(255, 255, 255, 0.4038865546) 100%);
   gap: 20px;
@@ -452,6 +457,30 @@ button:hover {
 .tp__right:hover {
   background-color: #717171;
   cursor: pointer;
+}
+
+.locations {
+  padding: 10px 50px;
+}
+.locations .locations__container {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+}
+
+.location__card {
+  width: 300px;
+  height: 200px;
+}
+.location__card .card-image__container {
+  width: 200px;
+  height: 160px;
+  border-radius: 50px;
+}
+.location__card .card-image__container .card__image {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .footer {
@@ -593,6 +622,21 @@ button:hover {
   }
   .category__buttons {
     width: 190px;
+  }
+}
+@media only screen and (min-width: 1128px) {
+  .tp__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 13rem;
+    height: 66px;
+  }
+  .total__price {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 190px;
   }
 }
 @media only screen and (max-width: 1440px) {

@@ -1,0 +1,32 @@
+.locations{
+    padding: 10px 50px;
+
+
+    .locations__container{
+
+        @include flex_row;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+.location__card{
+
+    width: 300px;
+    height: 200px;
+
+    .card-image__container{
+        width: 200px;
+        height: 160px;
+
+        border-radius: 50px;
+
+        .card__image{
+            width: 100%;
+            height: fit-content;
+
+
+        }
+    }
+}

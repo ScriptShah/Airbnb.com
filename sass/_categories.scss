@@ -59,6 +59,12 @@
   }
 }
 
+.category.selected{
+  border-bottom: 3px solid #000000c2;
+  offset: 5px;
+}
+
+
 .category__buttons {
   position: absolute;
   @include flex_row;
@@ -66,7 +72,7 @@
   align-items: center;
   flex-shrink: 0;
   height: 80px;
-  width: 240px;
+  width: 245px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     270deg,

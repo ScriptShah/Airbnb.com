@@ -28,7 +28,6 @@
 
   .total__price {
     height: 200px;
-
     .tp__container {
       margin: 0px 30px;
     }
@@ -65,6 +64,24 @@
   }
 }
 
+@media only screen and (min-width: 1128px) {
+.tp__container{
+  width: fit-content;
+  gap: 13rem;
+  height: 66px;
+
+}
+.total__price{
+  @include flex_col;
+  justify-content: flex-end;
+  align-items: center;
+  height: 190px;
+}
+
+}
+
+
+
 @media only screen and (max-width: 1440px) {
   .big__header {
     padding: 10px 50px;
@@ -83,6 +100,13 @@
   .big-footer__container {
     padding: 0px 60px;
   }
+
+  // .total__price {
+  //   width: fit-content;
+  //   .tp__container {
+  //     width: fit-content;
+  //   }
+  // }
 }
 
 @media only screen and (max-width: 950px) {
