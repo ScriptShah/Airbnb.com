@@ -10,10 +10,10 @@
   margin: 15px;
   margin-left: 25px;
   padding: 10px 15px;
-  position: fixed;
   display: flex;
   flex-flow: row nowrap;
   background-color: #fff;
+  position: fixed;
 
   &:hover {
     cursor: pointer;
@@ -76,13 +76,16 @@ button {
 }
 
 .big__header {
+  position: fixed;
   width: 100%;
   height: 81px;
   justify-content: space-between;
   padding: 10px 95px;
   border-bottom: 1px solid #8b8b8b36;
+  background-color: #fff;
   gap: 10px;
   overflow: hidden;
+  top: 0;
 }
 
 .big-header__left {

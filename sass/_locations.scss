@@ -1,32 +1,42 @@
 .locations{
+    width: 100%;
+    height: 100%;
     padding: 10px 50px;
-
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px ;
+    grid-template-columns: auto ;
+    gap: 50px 10px;
 
     .locations__container{
 
-        @include flex_row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+        grid-template-rows:50px;
+        gap: 10px 10px;
+        padding: 10px 30px;
+        
+
     }
+
 
 }
 
-
 .location__card{
+    overflow: hidden;
+    object-fit:cover;
+    height: 300px;
+    width: 320px;
 
-    width: 300px;
-    height: 200px;
-
-    .card-image__container{
-        width: 200px;
-        height: 160px;
-
-        border-radius: 50px;
-
-        .card__image{
-            width: 100%;
-            height: fit-content;
+    border-radius: 20px;
+}
 
 
-        }
-    }
+
+
+
+.card__image{
+    display:flex;
+    width: fit-content;
+    object-fit: cover;
 }

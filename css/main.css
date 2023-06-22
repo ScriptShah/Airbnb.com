@@ -128,10 +128,10 @@ body {
   margin: 15px;
   margin-left: 25px;
   padding: 10px 15px;
-  position: fixed;
   display: flex;
   flex-flow: row nowrap;
   background-color: #fff;
+  position: fixed;
 }
 .small__header:hover {
   cursor: pointer;
@@ -187,13 +187,16 @@ button:hover {
 }
 
 .big__header {
+  position: fixed;
   width: 100%;
   height: 81px;
   justify-content: space-between;
   padding: 10px 95px;
   border-bottom: 1px solid rgba(139, 139, 139, 0.2117647059);
+  background-color: #fff;
   gap: 10px;
   overflow: hidden;
+  top: 0;
 }
 
 .big-header__left {
@@ -302,15 +305,17 @@ button:hover {
 }
 
 .categories {
-  position: absolute;
+  position: fixed;
+  background-color: #fff;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  top: 88px;
   left: -8px;
-  padding: 0px 25px;
+  margin-top: -19px;
   width: 100%;
   overflow: hidden;
+  box-shadow: 16px 13px 8px -49px rgba(0, 0, 0, 0.1), 0px 1px 8px -3px rgba(0, 0, 0, 0.1), 0px 8px 2px -6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.6s ease 0.3s;
 }
 
 .categories__container {
@@ -318,7 +323,8 @@ button:hover {
   flex-flow: row nowrap;
   align-items: center;
   gap: 2.3rem;
-  height: 60px;
+  height: 40px;
+  width: 100%;
   padding: 10px 50px;
 }
 .categories__container .category__buttons {
@@ -407,9 +413,11 @@ button:hover {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
-  height: 250px;
+  height: 50px;
+  width: 100%;
   padding: 10px 20px;
   line-height: 22px;
+  margin-top: 100px;
 }
 
 .tp__container {
@@ -460,27 +468,37 @@ button:hover {
 }
 
 .locations {
+  width: 100%;
+  height: 100%;
   padding: 10px 50px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: auto;
+  gap: 50px 10px;
 }
 .locations .locations__container {
-  display: flex;
-  flex-flow: row nowrap;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 50px;
+  gap: 10px 10px;
+  padding: 10px 30px;
 }
 
 .location__card {
-  width: 300px;
-  height: 200px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 320px;
+  border-radius: 20px;
 }
-.location__card .card-image__container {
-  width: 200px;
-  height: 160px;
-  border-radius: 50px;
-}
-.location__card .card-image__container .card__image {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+
+.card__image {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
