@@ -1,5 +1,6 @@
 // media queries starts here !
 
+
 @media only screen and (min-width: 744px) {
   .small__header,
   .small-footer__container {
@@ -49,8 +50,22 @@
   .big__header {
     display: none;
   }
+  .small__header{
+    z-index: 3;
+  }
   .category__buttons {
     display: none;
+  }
+  .categories{
+    top: 98px;
+    z-index: 2;
+    width: 100vw;
+    height: 67px;
+    padding-left: 30px;
+  }
+
+  .total__price{
+    margin-top: 200px;
   }
 }
 
