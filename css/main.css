@@ -479,6 +479,39 @@ button:hover {
   cursor: pointer;
 }
 
+.locations__container {
+  padding-top: 20px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.location__card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 320px;
+  height: 400px;
+}
+.location__card .location__image-container {
+  max-width: 320px;
+  min-height: 320px;
+}
+.location__card .location__image-container .location__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
 .footer {
   position: fixed;
   bottom: 0px;

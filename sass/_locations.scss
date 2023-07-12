@@ -1,0 +1,69 @@
+.locations__container{
+    padding-top: 20px;
+    padding-bottom: 90px;
+    @include flex_row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+.location__card{
+    @include flex_col;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 320px;
+    height: 400px;
+
+
+    .location__image-container{
+        max-width: 320px;
+        min-height: 320px;
+        
+        .location__image{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+    
+    }
+    
+    .card__description{
+
+        .location__name{
+
+        }
+
+        .location__distance{
+
+        }
+
+        .location__available-date{
+
+        }
+
+        .location__price{
+
+            .price{
+
+            }
+
+            .time{
+
+            }
+
+        }
+    
+    }
+
+
+}
