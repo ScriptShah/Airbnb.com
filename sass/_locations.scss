@@ -17,15 +17,16 @@
 .location__card{
     @include flex_col;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     width: 320px;
     height: 400px;
 
 
     .location__image-container{
         max-width: 320px;
-        min-height: 320px;
-        
+        min-height: 310px;
+
+
         .location__image{
             width: 100%;
             height: 100%;
@@ -38,22 +39,28 @@
     }
     
     .card__description{
+        font-size: 15px;
 
         .location__name{
+            font-weight: 700;
 
         }
 
         .location__distance{
+            color: #888;
 
         }
 
         .location__available-date{
+            color: #888;
 
         }
 
         .location__price{
+            margin-top: 8px;
 
             .price{
+                font-weight: 700;
 
             }
 

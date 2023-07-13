@@ -496,13 +496,13 @@ button:hover {
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   width: 320px;
   height: 400px;
 }
 .location__card .location__image-container {
   max-width: 320px;
-  min-height: 320px;
+  min-height: 310px;
 }
 .location__card .location__image-container .location__image {
   width: 100%;
@@ -511,6 +511,24 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+.location__card .card__description {
+  font-size: 15px;
+}
+.location__card .card__description .location__name {
+  font-weight: 700;
+}
+.location__card .card__description .location__distance {
+  color: #888;
+}
+.location__card .card__description .location__available-date {
+  color: #888;
+}
+.location__card .card__description .location__price {
+  margin-top: 8px;
+}
+.location__card .card__description .location__price .price {
+  font-weight: 700;
 }
 .footer {
   position: fixed;
