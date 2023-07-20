@@ -4,15 +4,11 @@
 
     position: fixed;
     width: 100%;
-    bottom: 80px;
+    bottom: 88px;
 
 
 }
 
-
-.button__area{
-
-}
 
 
 
@@ -20,7 +16,7 @@
 .show__map {
     @include flex_row;
     border-radius: 24px;
-    padding: 10px 19px;
+    padding: 11px 19px;
     justify-content: center;
     transition:transform 0.15s;
     background: rgb(34, 34, 34);

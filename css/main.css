@@ -536,14 +536,14 @@ button:hover {
   justify-content: center;
   position: fixed;
   width: 100%;
-  bottom: 80px;
+  bottom: 88px;
 }
 
 .show__map {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 24px;
-  padding: 10px 19px;
+  padding: 11px 19px;
   justify-content: center;
   transition: transform 0.15s;
   background: rgb(34, 34, 34);
