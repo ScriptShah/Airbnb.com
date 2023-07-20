@@ -19,9 +19,7 @@
 
 .show__map {
     @include flex_row;
-    border-radius: 24px ;
-    border: 1px solid rgba(0, 0, 0, 0.08) ;
-    margin: 0px;
+    border-radius: 24px;
     padding: 10px 19px;
     justify-content: center;
     transition:transform 0.15s;
@@ -34,12 +32,15 @@
     &:hover {
         transform: scale(1.04, 1.04);
         cursor: pointer;
+
       }
+
+
+      .button__txt{
+        @include flex_row;
+        align-items: center;
+        gap: 7px;
+    }  
       
 }
 
-.button__txt{
-    @include flex_row;
-    align-items: center;
-    gap: 5px;
-}
